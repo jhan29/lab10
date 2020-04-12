@@ -179,7 +179,7 @@ desired effect
               <!-- The user image in the navbar-->
               <img src="{{asset('/dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <span class="hidden-xs">Jhan Gonzalez</span>
+              <span class="hidden-xs">{{ Auth::user()->name }}</span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
@@ -187,7 +187,7 @@ desired effect
                 <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
 
                 <p>
-                  Jhan Gonzalez - Web Developer
+                {{ Auth::user()->name }} - Web Developer
                   <small>Member since Nov. 2012</small>
                 </p>
               </li>
@@ -212,7 +212,15 @@ desired effect
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                
+                                        <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
                 </div>
               </li>
             </ul>
@@ -237,7 +245,7 @@ desired effect
           <img src="{{asset('/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Jhan Gonzalez</p>
+          <p>{{ Auth::user()->name }}</p>
           <!-- Status -->
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>

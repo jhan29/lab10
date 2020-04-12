@@ -1,0 +1,5 @@
+https://github.com/jhan29/lab10.git
+
+git config --global user.name "jhan29"git config --global user.email jhan.gonzalez2000@gmail.com
+
+git remote add origin https://github.com/jhan29/lab10.git

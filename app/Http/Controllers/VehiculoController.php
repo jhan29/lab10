@@ -10,6 +10,11 @@ use DB;
 class VehiculoController extends Controller
 
 {
+    public function __construct()
+ {
+ $this->middleware('auth');
+ }
+
     public function index(Request $request)
     {
     if ($request)
@@ -54,4 +59,5 @@ public function destroy($id)
  Vehiculo::find($id)->delete();
  return redirect()->route('vehiculo.index')->with('success','Registro Eliminado');
  }
+ 
 }
