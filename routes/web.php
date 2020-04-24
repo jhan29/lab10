@@ -15,11 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 */
+
 Route::resource('vehiculo', 'VehiculoController');
+Route::resource('tarifa','TarifaController');
 
 
 Auth::routes();
-
+Route::get('/', function () {
+    return view('auth/login');
+    });
+    
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/logout', 'loginController@logout')->name('logout');
 
