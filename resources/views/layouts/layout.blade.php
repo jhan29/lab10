@@ -268,7 +268,7 @@ desired effect
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
         <li class="active"><a href="tarifa"><i class="fa fa-link"></i> <span><h4>Tarifas</h4></span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>users</span></a></li>
+        <li class="active"><a href="ingresoV"><i class="fa fa-link"></i> <span>Ingresos</span></a></li>
         <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
             <span class="pull-right-container">
