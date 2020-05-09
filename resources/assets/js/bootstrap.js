@@ -1,4 +1,3 @@
-
 window._ = require('lodash');
 
 /**
@@ -43,11 +42,10 @@ if (token) {
  * allows your team to easily build robust real-time web applications.
  */
 
-// import Echo from 'laravel-echo'
-
-// window.Pusher = require('pusher-js');
-
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: 'your-pusher-key'
-// });
+import Echo from "laravel-echo"
+window.Echo = new Echo({
+    broadcaster: 'pusher',
+    key: 'f122b8729e2b99bb3019',
+    cluster: 'us2',
+    encrypted: true
+});

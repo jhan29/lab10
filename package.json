@@ -16,6 +16,28 @@
     "jquery": "^3.1.1",
     "laravel-mix": "^1.0",
     "lodash": "^4.17.4",
-    "vue": "^2.1.10"
-  }
+    "vue": "^2.1.10",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "laravel-echo": "^1.7.0",
+    "pusher-js": "^6.0.2"
+  },
+  "name": "proyecto",
+  "description": "<p align=\"center\"><img src=\"https://laravel.com/assets/img/components/logo-laravel.svg\"></p>",
+  "version": "1.0.0",
+  "main": "webpack.mix.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhan29/lab10.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhan29/lab10/issues"
+  },
+  "homepage": "https://github.com/jhan29/lab10#readme"
 }

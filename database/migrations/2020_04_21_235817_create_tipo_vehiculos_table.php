@@ -13,11 +13,12 @@ class CreateTipoVehiculosTable extends Migration
      */
     public function up()
     {
-    Schema::create('tipo_vehiculos', function (Blueprint $table) {
-    $table->bigIncrements('id');
-    $table->string('nombre', 25);
-    $table->string('descripcion',25) ->nullable();
-    });
+        Schema::create('tipo_vehiculos', function (Blueprint $table) {
+            $table->UnsignedInteger('id');
+            $table->foreign('id')->references('id')->on('vehiculos')->onDelete('cascade');
+            $table->string('nombre', 25);
+            $table->string('descripcion',25) ->nullable();
+        });
     }
 
     /**
@@ -30,3 +31,4 @@ class CreateTipoVehiculosTable extends Migration
         Schema::dropIfExists('tipo_vehiculos');
     }
 }
+
