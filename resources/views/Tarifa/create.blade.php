@@ -40,3 +40,13 @@
  </div>
  </div>
 @endsection
+<script> 
+$(document).ready(function(){
+
+$(".btn btn-info").click(function(){
+  $(".btn btn-info").hide(1000);
+  alert("Has ocultado las notificaciones");
+});
+});
+
+</script> 

@@ -79,7 +79,7 @@ desired effect
           <!-- Messages: style can be found in dropdown.less-->
           <li class="dropdown messages-menu">
             <!-- Menu toggle button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a id="ddd"href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-envelope-o"></i>
               <span class="label label-success">4</span>
             </a>
@@ -115,7 +115,7 @@ desired effect
           <!-- Notifications Menu -->
           <li class="dropdown notifications-menu">
             <!-- Menu toggle button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a id="dddd" href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"></i>
               <span class="label label-warning">10</span>
             </a>
@@ -138,7 +138,7 @@ desired effect
           <!-- Tasks Menu -->
           <li class="dropdown tasks-menu">
             <!-- Menu Toggle Button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a id="ddddd" href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flag-o"></i>
               <span class="label label-danger">9</span>
             </a>
@@ -195,13 +195,13 @@ desired effect
               <li class="user-body">
                 <div class="row">
                   <div class="col-xs-4 text-center">
-                    <a href="#">Followers</a>
+                    <a  href="#">Followers</a>
                   </div>
                   <div class="col-xs-4 text-center">
                     <a href="#">Sales</a>
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="#">Friends</a>
+                    <a  href="#">Friends</a>
                   </div>
                 </div>
                 <!-- /.row -->
@@ -276,8 +276,8 @@ desired effect
               </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#">Link in level 2</a></li>
-            <li><a href="#">Link in level 2</a></li>
+            <li id="link"><a href="#">Ocultar Notificationes</a></li>
+            <li id="linked"><a href="#">Link in level 2</a></li>
           </ul>
         </li>
       </ul>
@@ -290,9 +290,9 @@ desired effect
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>
-        Proyecto Parqueadero
-        <small>Sitio de Pruebas</small>
+      <h1 id="ppp">
+        SMART PARKING
+        <small >Proyecto Parqueadero</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
@@ -412,5 +412,17 @@ desired effect
      Both of these plugins are recommended to enhance the
      user experience. -->
 </body>
+<script> 
+$(document).ready(function(){
+
+$("#link").click(function(){
+  $("#ddd").hide(1000);
+  $("#dddd").hide(1000);
+  $("#ddddd").hide(1000);
+  alert("Has ocultado las notificaciones");
+});
+});
+
+</script> 
 
 </html>
